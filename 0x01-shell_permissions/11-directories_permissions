@@ -1,4 +1,2 @@
 #!/bin/bash
-for d in */; do
-   chmod 711 $d
-done
+chmod 711 $(find . -maxdepth 1 -type d)
